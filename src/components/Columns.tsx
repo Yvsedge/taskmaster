@@ -5,7 +5,6 @@ import {Plus, X, ChevronRight, ChevronLeft} from 'lucide-react';
 import { Droppable, Draggable } from '@hello-pangea/dnd';
 
 interface ColumnsProps{
-    title : string,
     status: 'todo' | 'in_progress' | 'done';
 }
 
@@ -16,7 +15,7 @@ const typeColors: Record<string, string> = {
 };
 
 
-export default function Columns({title, status} : ColumnsProps){
+export default function Columns({status} : ColumnsProps){
 
     const [flag, setFlag] = useState(false);
     const [name, setName] = useState("");

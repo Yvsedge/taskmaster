@@ -72,6 +72,8 @@ export default function MainScreen(){
             updateTaskStatus(Number(draggableId), destination.droppableId as any);
         };
 
+    if(error) return <div className="text-red-600">{error}</div>
+    if(loading) return <div className="text-yellow-600">{loading}</div>
     return(
         <div className="flex flex-col">
         <div className="flex justify-between items-center bg-zinc-900 border-b border-zinc-800 p-4 text-white font-mono">
@@ -90,15 +92,12 @@ export default function MainScreen(){
             <div className="min-h-screen bg-black p-10 flex gap-8 justify-center overflow-x-auto">
                 
                 <Columns 
-                    title="To Do" 
                     status="todo" 
                     />
                 <Columns 
-                    title="In Progress" 
                     status="in_progress" 
                     />
                 <Columns 
-                    title="Done" 
                     status="done" 
                     />
             </div>

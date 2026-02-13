@@ -35,6 +35,8 @@ export default function LoginScreen(){
         }
     };
 
+    if(error) return <div className="text-red-600">{error}</div>
+    if(loading) return <div className="text-yellow-600">{loading}</div>
     return(
         <div className="flex justify-center items-center bg-black h-screen">
             <div className="m-5 bg-white text-black min-h-9/12 h-10/12 min-w-9/12">
