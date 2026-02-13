@@ -83,5 +83,3 @@ Designed the interface with a "Handheld Gadget" aesthetic, featuring dynamic gra
 
 ***
 
-### 💡 Closing Note
-This project represents the final stage of my "Full-Stack Trilogy," moving from local logic to cloud-integrated, real-time systems. Check out my [Finance Tracker](LINK) and [Interactive Pokedex](LINK) for more!
